@@ -87,10 +87,17 @@ public class ComplaintFormController {
             @Override
             protected Complaint call() throws Exception {
                 Complaint created = complaintService.createComplaint(complaint);
+
                 if (!selectedFiles.isEmpty()) {
-                    FileUploadUtil.processAttachments(selectedFiles.stream().map(File::toPath).collect(Collectors.toList()),
+                    var storedAttachments = FileUploadUtil.processAttachments(
+                            selectedFiles.stream().map(File::toPath).collect(Collectors.toList()),
                             new java.io.File("uploads").toPath());
+
+                    // Persist uploaded attachments into DB
+                    var attachmentRepository = new com.compass.repository.AttachmentRepository();
+                    attachmentRepository.saveAll(created.getId(), storedAttachments);
                 }
+
                 try {
                     reportingClient.reportComplaint(created);
                 } catch (IOException | InterruptedException ex) {
@@ -99,6 +106,7 @@ public class ComplaintFormController {
                 return created;
             }
         };
+
 
         saveTask.setOnSucceeded(workerStateEvent -> {
             statusMessage.setText("Complaint submitted successfully.");
