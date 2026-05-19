@@ -73,6 +73,7 @@ public class FileUploadUtil {
         return attachments;
     }
 
+
     private static String generateSafeFileName(Path source) {
         String original = source.getFileName().toString();
         String extension = getExtension(original);
