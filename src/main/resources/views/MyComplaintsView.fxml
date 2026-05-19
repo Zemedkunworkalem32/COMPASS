@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.controller.MyComplaintsController" spacing="10" padding="16">
+    <HBox spacing="10">
+        <Label text="My Complaints" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Button fx:id="refreshButton" text="Refresh" onAction="#handleRefresh" />
+        <Label fx:id="loadingLabel" text="" />
+    </HBox>
+    <TableView fx:id="complaintsTable" prefHeight="520">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50" />
+            <TableColumn fx:id="titleColumn" text="Title" prefWidth="250" />
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="120" />
+            <TableColumn fx:id="priorityColumn" text="Priority" prefWidth="100" />
+            <TableColumn fx:id="updatedAtColumn" text="Updated At" prefWidth="200" />
+        </columns>
+    </TableView>
+</VBox>
+

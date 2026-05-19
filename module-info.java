@@ -1,15 +1,16 @@
-module com.compass {
+module com.campus {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
     requires java.net.http;
     requires javafx.graphics;
 
-    opens com.compass.controller to javafx.fxml;
-    opens com.compass.model to javafx.base;
-    exports com.compass;
-    exports com.compass.controller;
-    exports com.compass.model;
-    exports com.compass.service;
-    exports com.compass.util;
+    opens com.campus.controller to javafx.fxml;
+    opens com.campus.model to javafx.base;
+    exports com.campus;
+    exports com.campus.controller;
+    exports com.campus.model;
+    exports com.campus.service;
+    exports com.campus.util;
 }
+
