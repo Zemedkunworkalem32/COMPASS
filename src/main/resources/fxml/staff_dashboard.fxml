@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.compass.controller.StaffDashboardController"
+            styleClass="root">
+    <top>
+        <HBox spacing="12" styleClass="card">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <VBox>
+                <Label text="Department Staff Dashboard" styleClass="header-label"/>
+                <Label fx:id="welcomeLabel" styleClass="subheader-label"/>
+                <Label fx:id="workloadLabel" styleClass="subheader-label"/>
+            </VBox>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Logout" onAction="#handleLogout" styleClass="danger-button"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="8" styleClass="card">
+            <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+            <HBox spacing="10">
+                <Label text="Department Complaints" styleClass="header-label"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <ComboBox fx:id="statusCombo" prefWidth="140"/>
+                <Button text="Update Status" onAction="#handleUpdateStatus" styleClass="primary-button"/>
+                <Button text="Resolve" onAction="#handleResolve" styleClass="secondary-button"/>
+            </HBox>
+            <TextArea fx:id="responseNotes" promptText="Response / resolution notes..." prefRowCount="2"/>
+            <TableView fx:id="complaintsTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="studentCol" text="Student" prefWidth="130"/>
+                    <TableColumn fx:id="titleCol" text="Title" prefWidth="200"/>
+                    <TableColumn fx:id="priorityCol" text="Priority" prefWidth="90"/>
+                    <TableColumn fx:id="statusCol" text="Status" prefWidth="120"/>
+                    <TableColumn fx:id="dateCol" text="Created" prefWidth="140"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
