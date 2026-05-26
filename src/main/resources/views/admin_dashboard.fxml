@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootPane" spacing="15" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.controller.AdminDashboardController">
+    <Label text="Admin Dashboard" style="-fx-font-size: 24; -fx-font-weight: bold;" />
+
+    <HBox spacing="10" style="-fx-padding: 10; -fx-border-color: #ddd; -fx-border-width: 0 0 1 0;">
+        <DatePicker fx:id="dateFilterPicker" />
+        <Button fx:id="refreshButton" text="Refresh" style="-fx-padding: 8px 15px;" />
+    </HBox>
+
+    <GridPane fx:id="analyticsCardsGrid" hgap="15" vgap="15" prefHeight="150">
+        <VBox styleClass="analytics-card" style="-fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Label text="Total Complaints" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+            <Label fx:id="totalComplaintsLabel" text="0" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #2196F3;" />
+        </VBox>
+
+        <VBox styleClass="analytics-card" style="-fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label text="Pending" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+            <Label fx:id="pendingComplaintsLabel" text="0" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #FF9800;" />
+        </VBox>
+
+        <VBox styleClass="analytics-card" style="-fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <Label text="Resolved" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+            <Label fx:id="resolvedComplaintsLabel" text="0" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #4CAF50;" />
+        </VBox>
+
+        <VBox styleClass="analytics-card" style="-fx-padding: 15; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="0">
+            <Label text="Avg Response Time" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+            <Label fx:id="avgResponseTimeLabel" text="0 hrs" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #9C27B0;" />
+        </VBox>
+    </GridPane>
+
+    <HBox spacing="15" prefHeight="400">
+        <VBox style="-fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;" HBox.hgrow="ALWAYS">
+            <BarChart fx:id="complaintsByStatusChart" legendVisible="false" prefHeight="350" prefWidth="300">
+                <xAxis>
+                    <CategoryAxis fx:id="complaintStatusAxis" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="complaintCountAxis" />
+                </yAxis>
+            </BarChart>
+        </VBox>
+
+        <VBox style="-fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;" HBox.hgrow="ALWAYS">
+            <PieChart fx:id="complaintPriorityChart" prefHeight="350" prefWidth="300" />
+        </VBox>
+    </HBox>
+
+    <VBox style="-fx-border-color: #ddd; -fx-border-radius: 5; -fx-padding: 10;" prefHeight="400">
+        <LineChart fx:id="responseTimeChart" legendVisible="false" prefHeight="350">
+            <xAxis>
+                <CategoryAxis fx:id="responseTimeDayAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="responseTimeHoursAxis" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.controller.ComplaintFormController" spacing="12" padding="16">
+    <Label text="Submit a New Complaint" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <TextField fx:id="titleField" promptText="Complaint title" />
+    <TextArea fx:id="descriptionArea" promptText="Describe the issue" prefRowCount="8" />
+    <HBox spacing="10">
+        <Label text="Priority:" />
+        <ChoiceBox fx:id="priorityChoice" />
+    </HBox>
+    <HBox spacing="10">
+        <Button fx:id="attachButton" text="Attach Files" onAction="#handleAttachFiles" />
+        <Label fx:id="selectedFilesLabel" text="No files selected" wrapText="true" />
+    </HBox>
+    <Button fx:id="submitButton" text="Submit Complaint" onAction="#handleSubmit" />
+    <Label fx:id="statusMessage" style="-fx-text-fill: green;" />
+</VBox>
+

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,10 +7,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.compass</groupId>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.campus</groupId>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
     <artifactId>compass</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
+<<<<<<< HEAD
     <name>Campus Complaint Management System</name>
     <description>A comprehensive complaint management and department performance tracking system for campus operations</description>
 
@@ -22,6 +30,24 @@
     </properties>
 
     <dependencies>
+=======
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javafx.version>21.0.2</javafx.version>
+    </properties>
+
+    <dependencies>
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
         <!-- JavaFX Dependencies -->
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -35,11 +61,16 @@
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
+<<<<<<< HEAD
             <artifactId>javafx-web</artifactId>
+=======
+            <artifactId>javafx-graphics</artifactId>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
             <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
+<<<<<<< HEAD
             <artifactId>javafx-swing</artifactId>
             <version>${javafx.version}</version>
         </dependency>
@@ -82,16 +113,43 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.9.2</version>
+=======
+            <artifactId>javafx-web</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.11.2</version>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
+<<<<<<< HEAD
             <version>5.9.2</version>
+=======
+            <version>5.11.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.12.0</version>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
+<<<<<<< HEAD
             <artifactId>junit-jupiter-params</artifactId>
             <version>5.9.2</version>
             <scope>test</scope>
@@ -116,17 +174,44 @@
             <groupId>org.mindrot</groupId>
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
+=======
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.12.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
+<<<<<<< HEAD
             <!-- Compiler Plugin -->
+=======
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
+<<<<<<< HEAD
                     <source>17</source>
                     <target>17</target>
                     <release>17</release>
@@ -212,5 +297,27 @@
                 </includes>
             </resource>
         </resources>
+=======
+                    <release>${java.version}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <useModulePath>false</useModulePath>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>com.campus.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+>>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
     </build>
 </project>

@@ -1,0 +1,20 @@
+/* Shared JavaFX styles for Compass app */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f7f8fb;
+}
+
+.label {
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: #2a73cc;
+    -fx-text-fill: white;
+}
+
+.text-field, .text-area, .choice-box {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4;
+}

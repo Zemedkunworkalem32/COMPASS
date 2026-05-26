@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" prefWidth="900" prefHeight="600">
+    <top>
+        <Label text="Admin Dashboard" style="-fx-font-size: 24px; -fx-padding: 12;" />
+    </top>
+    <center>
+        <VBox spacing="12" padding="16">
+            <Label text="Performance charts and complaint metrics will appear here." />
+        </VBox>
+    </center>
+</BorderPane>

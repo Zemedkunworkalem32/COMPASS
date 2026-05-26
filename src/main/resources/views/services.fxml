@@ -1,0 +1,11 @@
+<?XML version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="rootPane" spacing="10" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.controller.ServicesController">
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" VBox.vgrow="ALWAYS">
+        <VBox fx:id="servicesContainer" spacing="15" />
+    </ScrollPane>
+</VBox>
