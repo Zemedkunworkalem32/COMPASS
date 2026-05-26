@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544dc026-5949-4b28-8afb-074bcc66eac2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminComplaintController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminDepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminLocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminStudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/ServicesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/StudentDashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin_complaints.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin_dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin_departments.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin_locations.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin_students.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/services.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/student_dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/util/ComplaintValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/util/ComplaintValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/compass.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/compass.css" afterDir="false" />
-    </list>
+    <list default="true" id="544dc026-5949-4b28-8afb-074bcc66eac2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
