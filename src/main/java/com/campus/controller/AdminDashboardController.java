@@ -12,6 +12,7 @@ import com.campus.repository.ComplaintRepository;
 import com.campus.service.PerformanceAnalyticsService;
 import com.campus.model.Complaint;
 
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
@@ -65,7 +66,7 @@ public class AdminDashboardController {
     private boolean isVisible = false;
 
     @FXML
-    public void initialize() {
+    public void initialize() throws SQLException {
         complaintRepository = new ComplaintRepository();
         analyticsService = new PerformanceAnalyticsService();
 
