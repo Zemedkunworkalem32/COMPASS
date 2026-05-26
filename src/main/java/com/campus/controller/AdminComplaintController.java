@@ -11,6 +11,7 @@ import com.campus.repository.DepartmentRepository;
 import com.campus.model.Complaint;
 import com.campus.model.Department;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -69,7 +70,7 @@ public class AdminComplaintController {
     private Complaint selectedComplaint;
 
     @FXML
-    public void initialize() {
+    public void initialize() throws SQLException {
         complaintRepository = new ComplaintRepository();
         departmentRepository = new DepartmentRepository();
 

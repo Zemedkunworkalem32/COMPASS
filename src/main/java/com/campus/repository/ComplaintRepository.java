@@ -124,7 +124,7 @@ public class ComplaintRepository implements Repository<Complaint> {
         return complaint;
     }
 
-    private Complaint update(Complaint complaint) throws SQLException {
+    public Complaint update(Complaint complaint) throws SQLException {
         try (PreparedStatement stmt = connection.prepareStatement(UPDATE_SQL)) {
             stmt.setString(1, complaint.getTitle());
             stmt.setString(2, complaint.getDescription());

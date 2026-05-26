@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="544dc026-5949-4b28-8afb-074bcc66eac2" name="Changes" comment="" />
+    <list default="true" id="544dc026-5949-4b28-8afb-074bcc66eac2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminComplaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminComplaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminDepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminDepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminLocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminLocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/AdminStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/controller/StudentDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/controller/StudentDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/campus/repository/ComplaintRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/campus/repository/ComplaintRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

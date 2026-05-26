@@ -3,6 +3,7 @@ package com.campus.controller;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import com.campus.repository.LocationRepository;
 import com.campus.model.CampusLocation;
