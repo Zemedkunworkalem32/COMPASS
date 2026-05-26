@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Compass — Campus Complaint Management System
 
 JavaFX desktop application for student complaint submission, department handling, admin oversight, performance analytics, and campus map navigation (Dijkstra shortest path).
@@ -183,4 +183,3 @@ src/
 └── sql/
     ├── schema.sql                                      (Teammate 1)
     └── seed_data.sql                                   (Teammate 1)
->>>>>>> f07b742d7fde68a608efa047d1f34a8bb1eb6e27
