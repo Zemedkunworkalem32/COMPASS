@@ -1,0 +1,4 @@
+--patch-module
+com.compass=_
+--add-reads
+com.compass=ALL-UNNAMED

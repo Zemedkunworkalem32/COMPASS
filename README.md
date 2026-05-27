@@ -7,10 +7,10 @@ A JavaFX desktop application that lets students submit and track complaints, dep
 ## Team
 
 | Role | Teammate |
-|------|----------|
+|------|---------|
 | Models, Repositories, Auth, Map/Navigation | Abdissa |
 | Complaint workflow, File upload, Analytics, Async | Zemedkun |
-| Admin & Student dashboards, UI/CSS | Teammate 3 |
+| Admin & Student dashboards, UI/CSS | Yoseph  |
 
 ---
 
