@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Campus Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        html, body, #map {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* THE GAME-CHANGER FOR MAC JAVAFX:
+          This forces the Mac WebKit engine to render the map grid using the
+          GPU's direct composition pipeline, stopping the gray squares and
+          flickering permanently when you drag or zoom!
+        */
+        .leaflet-tile-container {
+            will-change: transform !important;
+            transform: translate3d(0, 0, 0) !important;
+            -webkit-transform: translate3d(0, 0, 0) !important;
+        }
+
+        .leaflet-zoom-animated {
+            will-change: transform !important;
+            transform: translate3d(0, 0, 0) !important;
+            -webkit-transform: translate3d(0, 0, 0) !important;
+        }
+
+        .leaflet-tile {
+            visibility: inherit !important;
+            image-rendering: -webkit-optimize-contrast;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+    // Initialize map with animations disabled to prevent threading lag on macOS
+    var map = L.map('map', {
+        fadeAnimation: false,
+        zoomAnimation: false,
+        markerZoomAnimation: false,
+        inertia: false
+    }).setView([9.0322, 38.7468], 16);
+
+    var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap',
+        keepBuffer: 4 // Aggressively loads hidden tiles around the edges
+    }).addTo(map);
+
+    /* Forces an immediate map redraw every time an individual square
+       finishes downloading over the network.
+    */
+    tiles.on('tileload', function() {
+        if (window.renderTimeout) clearTimeout(window.renderTimeout);
+        window.renderTimeout = setTimeout(function() {
+            map.invalidateSize();
+        }, 30);
+    });
+
+    window.markers = [];
+    window.routeLayer = null;
+
+    window.setLocations = function(locations) {
+        window.markers.forEach(function(m) { map.removeLayer(m); });
+        window.markers = [];
+        locations.forEach(function(loc) {
+            var m = L.marker([loc.lat, loc.lng]).addTo(map).bindPopup(loc.name);
+            window.markers.push(m);
+        });
+        map.invalidateSize();
+    };
+
+    window.drawRoute = function(points) {
+        if (window.routeLayer) map.removeLayer(window.routeLayer);
+        var latlngs = points.map(function(p) { return [p.lat, p.lng]; });
+        window.routeLayer = L.polyline(latlngs, {color: 'blue', weight: 5}).addTo(map);
+        if (latlngs.length > 0) {
+            map.fitBounds(window.routeLayer.getBounds());
+        }
+        map.invalidateSize();
+    };
+</script>
+</body>
+</html>
