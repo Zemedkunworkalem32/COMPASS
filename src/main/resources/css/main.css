@@ -68,3 +68,32 @@
 .table-view {
     -fx-background-color: white;
 }
+.warning-button {
+    -fx-background-color: #dd6b20;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 4;
+}
+
+.warning-button:hover {
+    -fx-background-color: #c05621;
+}
+
+.success-button {
+    -fx-background-color: #38a169;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 4;
+}
+
+.success-button:hover {
+    -fx-background-color: #2f855a;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #bee3f8;
+    -fx-border-color: #2b6cb0;
+    -fx-border-width: 1;
+}

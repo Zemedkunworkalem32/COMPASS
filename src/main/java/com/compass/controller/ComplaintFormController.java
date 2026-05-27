@@ -37,10 +37,12 @@ public class ComplaintFormController {
         categoryCombo.getItems().addAll(
                 "Facilities", "Security", "Academic", "Health", "IT", "Other");
         categoryCombo.getSelectionModel().selectFirst();
+
         for (Complaint.ComplaintPriority p : Complaint.ComplaintPriority.values()) {
             priorityCombo.getItems().add(p.name());
         }
         priorityCombo.getSelectionModel().select("MEDIUM");
+
         departmentCombo.getItems().addAll(analyticsService.getAllDepartments());
         departmentCombo.setCellFactory(lv -> new ListCell<>() {
             @Override
@@ -50,6 +52,7 @@ public class ComplaintFormController {
             }
         });
         departmentCombo.setButtonCell(departmentCombo.getCellFactory().call(null));
+
         locationCombo.getItems().addAll(RepositoryFactory.locations().findAll());
         locationCombo.setCellFactory(lv -> new ListCell<>() {
             @Override

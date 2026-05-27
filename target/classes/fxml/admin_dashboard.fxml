@@ -9,6 +9,7 @@
             styleClass="root">
     <top>
         <VBox spacing="12">
+            <!-- Header Bar -->
             <HBox spacing="12" styleClass="card">
                 <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
                 <Label text="Admin Dashboard" styleClass="header-label"/>
@@ -16,6 +17,8 @@
                 <Button text="Campus Map" onAction="#handleOpenMap" styleClass="secondary-button"/>
                 <Button text="Logout" onAction="#handleLogout" styleClass="danger-button"/>
             </HBox>
+
+            <!-- Statistics Cards -->
             <HBox spacing="12">
                 <padding><Insets left="16" right="16"/></padding>
                 <VBox styleClass="stat-box">
@@ -35,6 +38,8 @@
                     <Label fx:id="analyticsLabel" wrapText="true"/>
                 </VBox>
             </HBox>
+
+            <!-- Filter Bar -->
             <HBox spacing="10" styleClass="card">
                 <padding><Insets top="8" right="16" bottom="8" left="16"/></padding>
                 <ComboBox fx:id="deptFilter" promptText="Department" prefWidth="160"/>
@@ -45,29 +50,43 @@
             </HBox>
         </VBox>
     </top>
+
     <center>
         <VBox spacing="8" styleClass="card">
             <padding><Insets top="8" right="16" bottom="16" left="16"/></padding>
-            <HBox spacing="10">
+
+            <!-- Action Buttons Bar -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
                 <Label text="All Complaints" styleClass="header-label"/>
                 <Pane HBox.hgrow="ALWAYS"/>
-                <ComboBox fx:id="assignDeptCombo" promptText="Assign to dept" prefWidth="180"/>
-                <Button text="Under Review" onAction="#handleUnderReview" styleClass="secondary-button"/>
+
+                <!-- View Details Button -->
+                <Button text="View Details" onAction="#handleViewDetails" styleClass="secondary-button"/>
+
+                <!-- Assign Department Combo -->
+                <ComboBox fx:id="assignDeptCombo" promptText="Assign to dept" prefWidth="160"/>
+
+                <!-- Status Action Buttons -->
+                <Button text="Under Review" onAction="#handleUnderReview" styleClass="warning-button"/>
                 <Button text="Assign" onAction="#handleAssign" styleClass="primary-button"/>
-                <Button text="Mark Resolved" onAction="#handleResolve" styleClass="secondary-button"/>
+                <Button text="Mark Resolved" onAction="#handleResolve" styleClass="success-button"/>
             </HBox>
+
+            <!-- Complaints Table -->
             <TableView fx:id="complaintsTable" VBox.vgrow="ALWAYS">
                 <columns>
-                    <TableColumn fx:id="idCol" text="ID" prefWidth="45"/>
-                    <TableColumn fx:id="studentCol" text="Student" prefWidth="120"/>
-                    <TableColumn fx:id="titleCol" text="Title" prefWidth="160"/>
-                    <TableColumn fx:id="deptCol" text="Department" prefWidth="120"/>
-                    <TableColumn fx:id="priorityCol" text="Priority" prefWidth="80"/>
-                    <TableColumn fx:id="statusCol" text="Status" prefWidth="110"/>
-                    <TableColumn fx:id="dateCol" text="Created" prefWidth="130"/>
+                    <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="studentCol" text="Student" prefWidth="130"/>
+                    <TableColumn fx:id="titleCol" text="Title" prefWidth="200"/>
+                    <TableColumn fx:id="deptCol" text="Department" prefWidth="140"/>
+                    <TableColumn fx:id="priorityCol" text="Priority" prefWidth="90"/>
+                    <TableColumn fx:id="statusCol" text="Status" prefWidth="120"/>
+                    <TableColumn fx:id="dateCol" text="Created" prefWidth="150"/>
                 </columns>
             </TableView>
-            <Label fx:id="statusMessage" styleClass="subheader-label"/>
+
+            <!-- Status Message -->
+            <Label fx:id="statusMessage" styleClass="subheader-label" wrapText="true"/>
         </VBox>
     </center>
 </BorderPane>
