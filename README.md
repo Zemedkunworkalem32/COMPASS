@@ -42,7 +42,7 @@ compass/
 │   │   │       ├── controller/      ← JavaFX controllers (one per screen)
 │   │   │       ├── db/              ← DatabaseManager, DataSeeder
 │   │   │       ├── model/           ← Complaint, User, Department, …
-│   │   │       ├── navigation/      ← Dijkstra RouteFinder
+│   │   │       ├── navigation/      ← RouteFinder
 │   │   │       ├── repository/      ← Interfaces + JDBC implementations
 │   │   │       ├── service/         ← Business logic (Auth, Complaint, Analytics)
 │   │   │       ├── thread/          ← AsyncComplaintLoader, StatusUpdateTask
