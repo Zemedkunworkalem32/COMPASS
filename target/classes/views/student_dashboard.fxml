@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.compass.controllers.StudentDashboardController"
+            styleClass="root">
+    <top>
+        <HBox spacing="12" styleClass="card">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <VBox>
+                <Label text="Student Dashboard" styleClass="header-label"/>
+                <Label fx:id="welcomeLabel" styleClass="subheader-label"/>
+            </VBox>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Submit Complaint" onAction="#handleSubmitComplaint" styleClass="primary-button"/>
+            <Button text="View Details" onAction="#handleViewDetails" styleClass="secondary-button"/>
+            <Button text="Campus Map" onAction="#handleOpenMap" styleClass="secondary-button"/>
+            <Button text="Logout" onAction="#handleLogout" styleClass="danger-button"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="8" styleClass="card">
+            <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+            <Label text="My Complaints" styleClass="header-label"/>
+            <TableView fx:id="complaintsTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="titleCol" text="Title" prefWidth="220"/>
+                    <TableColumn fx:id="categoryCol" text="Category" prefWidth="110"/>
+                    <TableColumn fx:id="statusCol" text="Status" prefWidth="120"/>
+                    <TableColumn fx:id="noteCol" text="Admin Notes" prefWidth="250"/>
+                    <TableColumn fx:id="dateCol" text="Submitted" prefWidth="170"/>
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

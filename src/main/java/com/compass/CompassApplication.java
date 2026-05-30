@@ -1,33 +1,30 @@
 package com.compass;
 
-import com.compass.db.DataSeeder;
-import com.compass.util.SceneNavigator;
+import com.compass.config.Session;
+import com.compass.config.View;
+import com.compass.config.Database;
+import com.compass.models.CompassData;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-/**
- * Campus Complaint Management System - Main Application Entry Point
- */
 public class CompassApplication extends Application {
-    private static final Logger logger = LoggerFactory.getLogger(CompassApplication.class);
+    private final CompassData data = new CompassData();
 
     @Override
     public void start(Stage primaryStage) {
         try {
-            logger.info("Starting Campus Complaint Management System");
-            SceneNavigator.init(primaryStage);
-            DataSeeder.seedIfNeeded();
+            View.init(primaryStage);
+            if (Database.initialize()) {
+                data.seedDefaultUsers();
+            }
             primaryStage.setOnCloseRequest(event -> {
-                logger.info("Application closing");
+                Session.logout();
                 System.exit(0);
             });
-            SceneNavigator.show("/fxml/login.fxml", "Compass - Campus Complaint Management", 800, 600);
+            View.show("login", "Compass - Campus Complaint Management", 800, 600);
             primaryStage.show();
-            logger.info("Application started successfully");
         } catch (Exception e) {
-            logger.error("Error starting application", e);
+            e.printStackTrace();
             System.exit(1);
         }
     }

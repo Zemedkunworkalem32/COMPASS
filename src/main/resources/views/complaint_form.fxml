@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.compass.controllers.ComplaintFormController"
+      spacing="12" styleClass="card">
+    <padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+    <Label text="Submit Complaint" styleClass="header-label"/>
+    <TextField fx:id="titleField" promptText="Title"/>
+    <ComboBox fx:id="categoryCombo" promptText="Dorm / Library / Cafe / Other" maxWidth="Infinity"/>
+    <TextArea fx:id="descriptionArea" promptText="Describe your complaint..." prefRowCount="6"/>
+    <HBox spacing="10">
+        <TextField fx:id="attachmentField" promptText="Optional attachment" editable="false" HBox.hgrow="ALWAYS"/>
+        <Button text="Browse..." onAction="#handleBrowse"/>
+    </HBox>
+    <Label fx:id="errorLabel" styleClass="error-label" visible="false" managed="false" wrapText="true"/>
+    <HBox spacing="10">
+        <Button text="Submit" onAction="#handleSubmit" styleClass="primary-button" defaultButton="true"/>
+        <Button text="Cancel" onAction="#handleCancel" styleClass="secondary-button"/>
+    </HBox>
+</VBox>

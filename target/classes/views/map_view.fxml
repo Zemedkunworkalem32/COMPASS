@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.compass.controllers.MapController"
+            styleClass="root">
+    <top>
+        <HBox spacing="12" styleClass="card">
+            <padding><Insets top="12" right="16" bottom="12" left="16"/></padding>
+            <Label text="AASTU Campus Map" styleClass="header-label"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <ComboBox fx:id="fromCombo" promptText="From" prefWidth="180"/>
+            <ComboBox fx:id="toCombo" promptText="To" prefWidth="180"/>
+            <Button text="Find Route" onAction="#handleFindRoute" styleClass="primary-button"/>
+            <Button text="Back" onAction="#handleBack" styleClass="secondary-button"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="8">
+            <padding><Insets top="8" right="16" bottom="16" left="16"/></padding>
+            <Label fx:id="routeLabel" wrapText="true" styleClass="subheader-label"/>
+            <WebView fx:id="mapWebView" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </center>
+</BorderPane>

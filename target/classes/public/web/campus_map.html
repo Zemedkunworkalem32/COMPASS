@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>AASTU Campus Map</title>
+    <style>
+        html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background: #eef5f9; }
+        #map { height: 100%; position: relative; overflow: hidden; }
+        .campus {
+            position: absolute; inset: 24px; border-radius: 18px;
+            background: linear-gradient(135deg, #e6fffa, #ebf8ff);
+            border: 2px solid #90cdf4;
+            box-shadow: 0 8px 22px rgba(0,0,0,.12);
+        }
+        .label { position: absolute; transform: translate(-50%, -120%); font-weight: bold; color: #1a365d; white-space: nowrap; }
+        .marker {
+            position: absolute; width: 16px; height: 16px; transform: translate(-50%, -50%);
+            border-radius: 50%; background: #2b6cb0; border: 3px solid white;
+            box-shadow: 0 2px 6px rgba(0,0,0,.25);
+        }
+        svg { position: absolute; inset: 24px; width: calc(100% - 48px); height: calc(100% - 48px); pointer-events: none; }
+        .note { position: absolute; left: 40px; bottom: 36px; color: #4a5568; }
+    </style>
+</head>
+<body>
+<div id="map">
+    <div class="campus"></div>
+    <svg><polyline id="route" fill="none" stroke="#38a169" stroke-width="6" stroke-linecap="round"/></svg>
+    <div class="note">Simple AASTU campus map using stored latitude and longitude coordinates.</div>
+</div>
+<script>
+    var locations = [];
+
+    function bounds(items) {
+        return items.reduce(function(box, loc) {
+            return {
+                minLat: Math.min(box.minLat, loc.lat),
+                maxLat: Math.max(box.maxLat, loc.lat),
+                minLng: Math.min(box.minLng, loc.lng),
+                maxLng: Math.max(box.maxLng, loc.lng)
+            };
+        }, {minLat: 90, maxLat: -90, minLng: 180, maxLng: -180});
+    }
+
+    function point(loc) {
+        var box = bounds(locations);
+        var width = document.body.clientWidth - 48;
+        var height = document.body.clientHeight - 48;
+        var lngSpan = Math.max(box.maxLng - box.minLng, 0.0001);
+        var latSpan = Math.max(box.maxLat - box.minLat, 0.0001);
+        return {
+            x: 24 + ((loc.lng - box.minLng) / lngSpan) * width,
+            y: 24 + (1 - ((loc.lat - box.minLat) / latSpan)) * height
+        };
+    }
+
+    window.setLocations = function(items) {
+        locations = items;
+        document.querySelectorAll('.marker,.label').forEach(function(el) { el.remove(); });
+        items.forEach(function(loc) {
+            var p = point(loc);
+            var marker = document.createElement('div');
+            marker.className = 'marker';
+            marker.style.left = p.x + 'px';
+            marker.style.top = p.y + 'px';
+            var label = document.createElement('div');
+            label.className = 'label';
+            label.textContent = loc.name;
+            label.style.left = p.x + 'px';
+            label.style.top = p.y + 'px';
+            document.getElementById('map').appendChild(marker);
+            document.getElementById('map').appendChild(label);
+        });
+    };
+
+    window.drawRoute = function(points) {
+        if (!points || points.length === 0) return;
+        var path = points.map(function(loc) {
+            var p = point(loc);
+            return (p.x - 24) + ',' + (p.y - 24);
+        }).join(' ');
+        document.getElementById('route').setAttribute('points', path);
+    };
+</script>
+</body>
+</html>

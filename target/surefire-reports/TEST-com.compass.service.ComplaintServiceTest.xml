@@ -1,70 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.compass.service.ComplaintServiceTest" time="0.88" tests="9" errors="9" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.compass.service.ComplaintServiceTest" time="1.373" tests="9" errors="9" skipped="0" failures="0">
   <properties>
-    <property name="http.proxyHost" value="192.168.101.250"/>
     <property name="java.specification.version" value="25"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/josico/Documents/GitHub/COMPASS/target/test-classes:/Users/josico/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-web/21.0.2/javafx-web-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-media/21.0.2/javafx-media-21.0.2.jar:/Users/josico/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/josico/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/josico/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/josico/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/josico/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/josico/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass\target\test-classes;C:\Users\Hp\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-web\21.0.2\javafx-web-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-media\21.0.2\javafx-media-21.0.2.jar;C:\Users\Hp\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Hp\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Hp\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;"/>
+    <property name="java.vm.vendor" value="BellSoft"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="user.timezone" value="Africa/Addis_Ababa"/>
-    <property name="os.name" value="Mac OS X"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://bell-sw.com/"/>
+    <property name="user.timezone" value="Africa/Nairobi"/>
+    <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="ET"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/josico/Documents/GitHub/COMPASS/target/surefire 2026-05-27T20-14-04_148-jvmRun1 surefire-20260527201404394_1tmp surefire_0-20260527201404394_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\BellSoft\LibericaJDK-25-Full\bin"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Hp\AppData\Local\Temp\surefire16908250718452354421 2026-05-30T19-15-48_424-jvmRun1 surefire-20260530191548854_1tmp surefire_0-20260530191548854_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/josico/Documents/GitHub/COMPASS/target/test-classes:/Users/josico/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-web/21.0.2/javafx-web-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-media/21.0.2/javafx-media-21.0.2.jar:/Users/josico/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/josico/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/josico/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/josico/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/josico/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/josico/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass\target\test-classes;C:\Users\Hp\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-web\21.0.2\javafx-web-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-media\21.0.2\javafx-media-21.0.2.jar;C:\Users\Hp\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Hp\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Hp\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/josico"/>
+    <property name="user.home" value="C:\Users\Hp"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="jdk.module.path" value="/Users/josico/Documents/GitHub/COMPASS/target/classes:/Users/josico/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/org/openjfx/javafx-web/21.0.2/javafx-web-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/org/openjfx/javafx-media/21.0.2/javafx-media-21.0.2-mac-aarch64.jar:/Users/josico/.m2/repository/com/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar:/Users/josico/.m2/repository/org/mindrot/jbcrypt/0.4/jbcrypt-0.4.jar:/Users/josico/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/josico/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/josico/.m2/repository/ch/qos/logback/logback-classic/1.5.3/logback-classic-1.5.3.jar:/Users/josico/.m2/repository/ch/qos/logback/logback-core/1.5.3/logback-core-1.5.3.jar"/>
-    <property name="java.version.date" value="2025-10-21"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/josico/Documents/GitHub/COMPASS"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="jdk.module.path" value="C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass\target\classes;C:\Users\Hp\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2-win.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2-win.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2-win.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2-win.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-web\21.0.2\javafx-web-21.0.2-win.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-media\21.0.2\javafx-media-21.0.2-win.jar;C:\Users\Hp\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\Hp\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\Hp\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Hp\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Hp\.m2\repository\ch\qos\logback\logback-classic\1.5.3\logback-classic-1.5.3.jar;C:\Users\Hp\.m2\repository\ch\qos\logback\logback-core\1.5.3\logback-core-1.5.3.jar"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="C:\Program Files\BellSoft\LibericaJDK-25-Full"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-booter/3.2.5/surefire-booter-3.2.5.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-api/3.2.5/surefire-api-3.2.5.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.2.5/surefire-logger-api-3.2.5.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.2.5/surefire-shared-utils-3.2.5.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.2.5/surefire-extensions-spi-3.2.5.jar:/Users/josico/Documents/GitHub/COMPASS/target/test-classes:/Users/josico/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-web/21.0.2/javafx-web-21.0.2.jar:/Users/josico/.m2/repository/org/openjfx/javafx-media/21.0.2/javafx-media-21.0.2.jar:/Users/josico/.m2/repository/com/google/protobuf/protobuf-java/3.25.1/protobuf-java-3.25.1.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/josico/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/josico/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/josico/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/josico/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/josico/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/josico/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/josico/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/3.2.5/surefire-junit-platform-3.2.5.jar:/Users/josico/.m2/repository/org/apache/maven/surefire/common-java5/3.2.5/common-java5-3.2.5.jar:/Users/josico/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-booter\3.2.5\surefire-booter-3.2.5.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-api\3.2.5\surefire-api-3.2.5.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.2.5\surefire-logger-api-3.2.5.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.2.5\surefire-shared-utils-3.2.5.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.2.5\surefire-extensions-spi-3.2.5.jar;C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass\target\test-classes;C:\Users\Hp\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-web\21.0.2\javafx-web-21.0.2.jar;C:\Users\Hp\.m2\repository\org\openjfx\javafx-media\21.0.2\javafx-media-21.0.2.jar;C:\Users\Hp\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Hp\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Hp\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Hp\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\surefire-junit-platform\3.2.5\surefire-junit-platform-3.2.5.jar;C:\Users\Hp\.m2\repository\org\apache\maven\surefire\common-java5\3.2.5\common-java5-3.2.5.jar;C:\Users\Hp\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.2\junit-platform-launcher-1.10.2.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="25.0.1"/>
-    <property name="user.name" value="josico"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="15.1"/>
+    <property name="java.runtime.version" value="25+37-LTS"/>
+    <property name="user.name" value="Abdi&apos;s"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/josico/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/c8/j4fn_41922j9_jrff268jnzr0000gn/T/"/>
-    <property name="java.version" value="25.0.1"/>
-    <property name="user.dir" value="/Users/josico/Documents/GitHub/COMPASS"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="localRepository" value="C:\Users\Hp\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bell-sw.com/support"/>
+    <property name="java.io.tmpdir" value="C:\Users\Hp\AppData\Local\Temp\"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="C:\Users\Hp\Desktop\doc_2026-05-30_18-54-22.idea\compass"/>
+    <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/josico/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\BellSoft\LibericaJDK-25-Full\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Hp\.codex\tmp\arg0\codex-arg0rPHXZv;C:\Program Files\BellSoft\LibericaJDK-25-Full\bin\;C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Apache\Maven\bin;c:\Users\Hp\AppData\Local\Programs\cursor\resources\app\codeBin;C:\Users\Hp\AppData\Local\Microsoft\WindowsApps;C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\Hp\AppData\Local\GitHubDesktop\bin;C:\Users\Hp\AppData\Roaming\npm;C:\Users\Hp\AppData\Local\PowerToys\DSCModules\;C:\Users\Hp\AppData\Local\Programs\cursor\resources\app\bin;c:\Users\Hp\.vscode\extensions\openai.chatgpt-26.519.32039-win32-x64\bin\windows-x86_64;."/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="25.0.1"/>
-    <property name="stdin.encoding" value="UTF-8"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="BellSoft"/>
+    <property name="java.vm.version" value="25+37-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
-    <property name="http.proxyPort" value="44355"/>
   </properties>
-  <testcase name="submitComplaint_nullAttachment_noPath" classname="com.compass.service.ComplaintServiceTest" time="0.703">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="submitComplaint_nullAttachment_noPath" classname="com.compass.service.ComplaintServiceTest" time="1.088">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -72,26 +69,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -144,31 +141,31 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 ]]></error>
-    <system-out><![CDATA[20:14:05,615 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.3
-20:14:05,615 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - No custom configurators were discovered as a service.
-20:14:05,615 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
-20:14:05,616 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
-20:14:05,616 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
-20:14:05,617 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
-20:14:05,618 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
-20:14:05,618 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
-20:14:05,619 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
-20:14:05,619 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-20:14:05,619 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/josico/Documents/GitHub/COMPASS/target/classes/logback.xml]
-20:14:05,661 |-WARN in ch.qos.logback.core.joran.action.ImplicitModelAction - Could not find parent model.
-20:14:05,661 |-WARN in ch.qos.logback.core.joran.action.ImplicitModelAction -  Will not add current implicit model as subModel.
-20:14:05,661 |-ERROR in ch.qos.logback.classic.joran.JoranConfigurator@26d820eb - Could not find valid configuration instructions. Exiting.
-20:14:05,661 |-INFO in ch.qos.logback.classic.util.ContextInitializer@314c8b4a - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 42 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+    <system-out><![CDATA[19:15:50,906 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.3
+19:15:50,908 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - No custom configurators were discovered as a service.
+19:15:50,908 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:15:50,909 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+19:15:50,911 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+19:15:50,912 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+19:15:50,915 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+19:15:50,915 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:15:50,916 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+19:15:50,917 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:15:50,919 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/Hp/Desktop/doc_2026-05-30_18-54-22.idea/compass/target/classes/logback.xml]
+19:15:51,013 |-WARN in ch.qos.logback.core.joran.action.ImplicitModelAction - Could not find parent model.
+19:15:51,013 |-WARN in ch.qos.logback.core.joran.action.ImplicitModelAction -  Will not add current implicit model as subModel.
+19:15:51,013 |-ERROR in ch.qos.logback.classic.joran.JoranConfigurator@6972c30a - Could not find valid configuration instructions. Exiting.
+19:15:51,013 |-INFO in ch.qos.logback.classic.util.ContextInitializer@d56aaa6 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 97 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
 
 ]]></system-out>
-    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/josico/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar)
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="markUnderReview_setsStatus" classname="com.compass.service.ComplaintServiceTest" time="0.023">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="markUnderReview_setsStatus" classname="com.compass.service.ComplaintServiceTest" time="0.027">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -176,26 +173,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -249,8 +246,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="assignToDepartment_updatesStatusAndDept" classname="com.compass.service.ComplaintServiceTest" time="0.019">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="assignToDepartment_updatesStatusAndDept" classname="com.compass.service.ComplaintServiceTest" time="0.026">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -258,26 +255,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -331,8 +328,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="filter_delegatesFilterCriteria" classname="com.compass.service.ComplaintServiceTest" time="0.019">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="filter_delegatesFilterCriteria" classname="com.compass.service.ComplaintServiceTest" time="0.029">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -340,26 +337,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -413,8 +410,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="assignToDepartment_notFound_throws" classname="com.compass.service.ComplaintServiceTest" time="0.018">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="assignToDepartment_notFound_throws" classname="com.compass.service.ComplaintServiceTest" time="0.027">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -422,26 +419,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -495,8 +492,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="getDepartmentComplaints_delegatesToRepository" classname="com.compass.service.ComplaintServiceTest" time="0.017">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="getDepartmentComplaints_delegatesToRepository" classname="com.compass.service.ComplaintServiceTest" time="0.035">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -504,26 +501,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -577,8 +574,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="submitComplaint_setsStatusAndSaves" classname="com.compass.service.ComplaintServiceTest" time="0.018">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="submitComplaint_setsStatusAndSaves" classname="com.compass.service.ComplaintServiceTest" time="0.027">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -586,26 +583,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -659,8 +656,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="getStudentComplaints_delegatesToRepository" classname="com.compass.service.ComplaintServiceTest" time="0.017">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="getStudentComplaints_delegatesToRepository" classname="com.compass.service.ComplaintServiceTest" time="0.026">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -668,26 +665,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -741,8 +738,8 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	... 27 more
 ]]></error>
   </testcase>
-  <testcase name="resolveComplaint_setsStatusAndTimestamp" classname="com.compass.service.ComplaintServiceTest" time="0.018">
-    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : Homebrew&#10;JVM vendor version : 25.0.1&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25.0.1&#10;JVM info           : mixed mode&#10;OS name            : Mac OS X&#10;OS version         : 15.1&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+  <testcase name="resolveComplaint_setsStatusAndTimestamp" classname="com.compass.service.ComplaintServiceTest" time="0.027">
+    <error message="&#10;Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.&#10;&#10;If you&apos;re not sure why you&apos;re getting this error, please open an issue on GitHub.&#10;&#10;&#10;Java               : 25&#10;JVM vendor name    : BellSoft&#10;JVM vendor version : 25+37-LTS&#10;JVM name           : OpenJDK 64-Bit Server VM&#10;JVM version        : 25+37-LTS&#10;JVM info           : mixed mode&#10;OS name            : Windows 11&#10;OS version         : 10.0&#10;&#10;&#10;You are seeing this disclaimer because Mockito is configured to create inlined mocks.&#10;You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.&#10;&#10;Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]" type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
 
@@ -750,26 +747,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)

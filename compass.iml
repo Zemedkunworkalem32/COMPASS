@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module version="4">
-  <component name="AdditionalModuleElements">
-    <content url="file://$MODULE_DIR$" dumb="true">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" type="java-test-resource" />
-    </content>
-  </component>
-</module>
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <version>3.1.0</version>
+    <configuration>
+        <mainClass>com.compass.CompassApplication</mainClass>
+        <modulePaths>
+            <modulePath>${env.PATH_TO_FX}</modulePath>
+        </modulePaths>
+    </configuration>
+</plugin>

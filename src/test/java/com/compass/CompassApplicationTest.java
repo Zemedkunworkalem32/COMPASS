@@ -1,38 +1,40 @@
 package com.compass;
 
+import com.compass.models.CampusLocation;
+import com.compass.models.CompassData;
+import com.compass.models.Complaint;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Basic test class to verify project setup
- */
-public class CompassApplicationTest {
-
+class CompassApplicationTest {
     @Test
-    public void testApplicationSetup() {
-        // Placeholder test - verify project structure is correct
-        assertNotNull(CompassApplication.class, "Application class should exist");
+    void applicationClassExists() {
+        assertNotNull(CompassApplication.class);
     }
 
     @Test
-    public void testDependenciesAvailable() {
-        // Test that required dependencies are available
-        try {
-            // JavaFX
-            Class.forName("javafx.application.Application");
-            
-            // MySQL
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            
-            // SLF4J
-            Class.forName("org.slf4j.Logger");
-            
-            // JUnit
-            Class.forName("org.junit.jupiter.api.Test");
-            
-            assertTrue(true, "All required dependencies available");
-        } catch (ClassNotFoundException e) {
-            fail("Missing required dependency: " + e.getMessage());
-        }
+    void complaintDefaultsAreSensible() {
+        Complaint complaint = new Complaint();
+
+        assertEquals(Complaint.ComplaintPriority.MEDIUM, complaint.getPriority());
+        assertEquals(Complaint.ComplaintStatus.SUBMITTED, complaint.getStatus());
+    }
+
+    @Test
+    void routeFormattingUsesLocationNames() {
+        CampusLocation library = new CampusLocation();
+        library.setLocationId(1);
+        library.setLocationName("Library");
+
+        CampusLocation lab = new CampusLocation();
+        lab.setLocationId(2);
+        lab.setLocationName("Lab");
+
+        String route = new CompassData().formatRoute(List.of(1, 2), List.of(library, lab));
+
+        assertEquals("Library -> Lab", route);
     }
 }

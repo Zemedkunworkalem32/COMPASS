@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.compass.service.ComplaintServiceTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.880 s <<< FAILURE! -- in com.compass.service.ComplaintServiceTest
-com.compass.service.ComplaintServiceTest.submitComplaint_nullAttachment_noPath -- Time elapsed: 0.703 s <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 1.373 s <<< FAILURE! -- in com.compass.service.ComplaintServiceTest
+com.compass.service.ComplaintServiceTest.submitComplaint_nullAttachment_noPath -- Time elapsed: 1.088 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -11,26 +11,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -83,7 +83,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.markUnderReview_setsStatus -- Time elapsed: 0.023 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.markUnderReview_setsStatus -- Time elapsed: 0.027 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -92,26 +92,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -164,7 +164,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.assignToDepartment_updatesStatusAndDept -- Time elapsed: 0.019 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.assignToDepartment_updatesStatusAndDept -- Time elapsed: 0.026 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -173,26 +173,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -245,7 +245,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.filter_delegatesFilterCriteria -- Time elapsed: 0.019 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.filter_delegatesFilterCriteria -- Time elapsed: 0.029 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -254,26 +254,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -326,7 +326,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.assignToDepartment_notFound_throws -- Time elapsed: 0.018 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.assignToDepartment_notFound_throws -- Time elapsed: 0.027 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -335,26 +335,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -407,7 +407,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.getDepartmentComplaints_delegatesToRepository -- Time elapsed: 0.017 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.getDepartmentComplaints_delegatesToRepository -- Time elapsed: 0.035 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -416,26 +416,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -488,7 +488,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.submitComplaint_setsStatusAndSaves -- Time elapsed: 0.018 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.submitComplaint_setsStatusAndSaves -- Time elapsed: 0.027 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -497,26 +497,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -569,7 +569,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.getStudentComplaints_delegatesToRepository -- Time elapsed: 0.017 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.getStudentComplaints_delegatesToRepository -- Time elapsed: 0.026 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -578,26 +578,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
@@ -650,7 +650,7 @@ Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by 
 	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
 	... 27 more
 
-com.compass.service.ComplaintServiceTest.resolveComplaint_setsStatusAndTimestamp -- Time elapsed: 0.018 s <<< ERROR!
+com.compass.service.ComplaintServiceTest.resolveComplaint_setsStatusAndTimestamp -- Time elapsed: 0.027 s <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 
 Mockito cannot mock this class: class com.compass.util.RemoteReportingClient.
@@ -659,26 +659,26 @@ If you're not sure why you're getting this error, please open an issue on GitHub
 
 
 Java               : 25
-JVM vendor name    : Homebrew
-JVM vendor version : 25.0.1
+JVM vendor name    : BellSoft
+JVM vendor version : 25+37-LTS
 JVM name           : OpenJDK 64-Bit Server VM
-JVM version        : 25.0.1
+JVM version        : 25+37-LTS
 JVM info           : mixed mode
-OS name            : Mac OS X
-OS version         : 15.1
+OS name            : Windows 11
+OS version         : 10.0
 
 
 You are seeing this disclaimer because Mockito is configured to create inlined mocks.
 You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
 
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at org.mockito.junit.jupiter.MockitoExtension.beforeEach(MockitoExtension.java:160)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	Suppressed: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because the return value of "org.junit.jupiter.api.extension.ExtensionContext$Store.remove(Object, java.lang.Class)" is null
 		at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:194)
 		... 2 more
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class com.compass.util.RemoteReportingClient, class java.lang.Object]
+Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [class java.lang.Object, class com.compass.util.RemoteReportingClient]
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
 	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
 	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
